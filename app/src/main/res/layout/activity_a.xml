@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="org.neosoft.com.d2challenge.ActivityA">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter email address"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="48dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/lEmail"
+            android:layout_below="@id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edTxtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="86dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lEmail"
+            android:text="Enter Password"
+            android:textSize="18sp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/lPwd"
+            android:layout_below="@id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edTxtPwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#0CDE64"
+            android:text="Activity A Button" />
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
